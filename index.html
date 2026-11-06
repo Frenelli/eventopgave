@@ -1,36 +1,81 @@
 <!doctype html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventnavn</title>
-    <link rel="stylesheet" href="./css/starter.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="header-content">
-        <a class="site-logo" href="./">Eventnavn</a>
-        <nav class="site-nav">
-          <button>Menu</button>
-          <ul class="menu" id="menu" popover>
-            <li><a href="./" aria-current="page">Forside</a></li>
-            <li><a href="./svg.html">Interaktiv SVG</a></li>
-            <li><a href="./form.html">Formular</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventnavn</title>
+  <link rel="stylesheet" href="./css/starter.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./">Eventnavn</a>
+      <nav class="site-nav">
+        <button type="button" popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./" aria-current="page">Forside</a></li>
+          <li><a href="./svg.html">Interaktiv SVG</a></li>
+          <li><a href="./form.html">Formular</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="text_on_top">
+      <img class="billede_mose" src="img/mose.jpg" alt="main picture">
+      <div class="text">
+        <h1>Jagt i Uterslev mose</h1>
       </div>
-    </header>
-
-    <main></main>
-
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>Eventnavn</p>
-        <p>Footer</p>
+    </div>
+    <div>
+      <h2>Hvorfor tage på opdagelse i Uterslev mose?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem natus nesciunt optio? Quam alias aspernatur
+        eaque, eum mollitia itaque, aut quo recusandae est sed dolore. Rerum, illum? Inventore, possimus.</p>
+    </div>
+    <div class="grid-1">
+      <div>
+        <h2>Planteliv</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nam quas vel dolorem blanditiis dolorum
+          praesentium iusto quisquam tempore eligendi? Accusamus reprehenderit dolore at. Non nisi ea dicta aliquam
+          repellendus.</p>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+      <div>
+        <h2>Dyreliv</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit iusto omnis voluptatum exercitationem
+          atque? Dolorem libero nemo laboriosam blanditiis, amet dolor eos est eveniet laborum sit voluptates
+          perspiciatis
+          iusto!</p>
+      </div>
+    </div>
+    <button type="button" onclick="alert">Link til anden side på hjemmesiden!</button>
+    <div>
+      <h2>Program</h2>
+      <ul class="program">
+        <div>
+          <li>Hej</li>
+          <li>Hej</li>
+        </div>
+        <div>
+          <li>hej</li>
+          <li>hej</li>
+        </div>
+      </ul>
+    </div>
+    <p>Popover</p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Eventnavn</p>
+      <p>Footer</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
