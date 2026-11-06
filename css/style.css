@@ -251,3 +251,143 @@ main > * {
   color: inherit;
   text-decoration: none;
 }
+
+/* _____________________________________________ */
+
+/* .site-nav button står faktisk længere oppe, 
+men jeg vil gerne tydeligt kunne se mine egne ændringer*/
+
+/* menu-knap */
+.site-nav button {
+  border-radius: 30%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/* menu */
+
+.menu {
+  position: absolute;
+  position-area: bottom span-left;
+}
+@media (width > 600px) {
+  .menu {
+    /* all: unset; */
+    display: flex;
+    gap: var(--space-1);
+    padding: 0;
+    border: none;
+    background: none;
+    position: static;
+  }
+}
+
+/* footer - spacing mellem sidste section og footeren */
+.site-footer {
+  margin-top: 50px;
+}
+
+/* alt herunder indtil næste _________ er specifikt forsiden (uden header og footer) */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* hero section */
+.hero {
+  background-color: rgb(232, 238, 243);
+  h1 {
+    margin-left: 70px;
+  }
+  button {
+    margin-top: 30px;
+    margin-left: 70px;
+    padding: 5px;
+    border-radius: 35%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/* .tilmeldingsblanket {
+  ...
+} */
+/* ^^ popover */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* .forside-beskrivelse {
+  ..
+} */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* section med billeder af dyr/planter på forsiden */
+.intro-billeder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ffffff;
+}
+
+.vand {
+  p {
+    justify-self: center;
+    padding-top: 5px;
+  }
+  img {
+    justify-self: center;
+    max-width: 250px;
+    max-height: auto;
+  }
+}
+
+.land {
+  p {
+    justify-self: center;
+    padding-top: 5px;
+  }
+  img {
+    justify-self: center;
+    max-width: 250px;
+    max-height: auto;
+  }
+}
+
+.luft {
+  p {
+    justify-self: center;
+    padding-top: 5px;
+  }
+  img {
+    justify-self: center;
+    max-width: 250px;
+    max-height: auto;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* section med program og kort*/
+.program {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  img {
+    max-width: 500px;
+    max-height: auto;
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* section med sponsorer, lokalforeninger osv. */
+.sponsorer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #a2a2a2;
+  p {
+    justify-self: center;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 30%;
+  }
+}

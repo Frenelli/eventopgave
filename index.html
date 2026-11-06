@@ -1,36 +1,98 @@
 <!doctype html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventnavn</title>
-    <link rel="stylesheet" href="./css/starter.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="header-content">
-        <a class="site-logo" href="./">Eventnavn</a>
-        <nav class="site-nav">
-          <button>Menu</button>
-          <ul class="menu" id="menu" popover>
-            <li><a href="./" aria-current="page">Forside</a></li>
-            <li><a href="./svg.html">Interaktiv SVG</a></li>
-            <li><a href="./form.html">Formular</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naturjagt i mosen</title>
+  <link rel="stylesheet" href="./css/starter.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./">Naturjagt i mosen</a>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <!-- har tilføjet popovertarget="menu", for at linke knappen til menuen og lave det til en popovermenu (dropdown) -->
+        <ul class="menu" id="menu" popover>
+          <li><a href="./" aria-current="page">Forside</a></li>
+          <li><a href="./svg.html">Aktivitetskort</a></li>
+          <li><a href="./form.html">Tilmelding</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="" alt="">
+      <h1>..Hero overskrift..</h1>
+      <button popovertarget="tilmelding">CTA</button>
+      <div class="tilmeldingsblanket" id="tilmelding" popover></div>
+    </section>
+
+
+    <div class="forside-beskrivelse">
+      <h3>..underoverskrift..</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore facere qui dolore,
+        corrupti nemo ratione voluptates rerum nesciunt nam ipsum assumenda sint voluptatibus at sit expedita aliquid
+        quod!</p>
+    </div>
+
+    <section class="intro-billeder">
+      <div class="vand">
+        <img src="/images/boks.jpg" alt="">
+        <p>Til vands ...</p>
       </div>
-    </header>
 
-    <main></main>
-
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>Eventnavn</p>
-        <p>Footer</p>
+      <div class="land">
+        <img src="/images/boks.jpg" alt="">
+        <p>... til lands ...</p>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+
+      <div class="luft">
+        <img src="/images/boks.jpg" alt="">
+        <p>... og i luften</p>
+      </div>
+    </section>
+
+
+
+    <section class="program">
+      <div>
+        <h4>Program</h4>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <img src="/images/forside-kort.jpg" alt="">
+    </section>
+
+    <section class="sponsorer">
+      <p>navn/logo</p>
+      <p>navn/logo</p>
+      <p>navn/logo</p>
+      <p>navn/logo</p>
+    </section>
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Naturjagt i mosen</p>
+      <p>**vores logo**</p>
+      <div>
+        <p><strong>Kontakt</strong></p>
+        <p>Lorem ...</p>
+        <p>Lorem ...</p>
+        <p>Lorem ...</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
