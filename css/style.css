@@ -255,32 +255,28 @@ main > * {
 /* _____________________________________________ */
 
 /* .site-nav button står faktisk længere oppe, 
-men jeg vil gerne tydeligt kunne se mine egne ændringer*/
+men vi vil gerne tydeligt kunne se vores ændringer*/
 
 /* menu-knap */
 .site-nav button {
-  border-radius: 30%;
+  border: none;
   &:hover {
     cursor: pointer;
   }
 }
 
 /* menu */
+[popover] {
+  position: fixed;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  background: white;
+  box-shadow: none;
+}
 
 .menu {
   position: absolute;
   position-area: bottom span-left;
-}
-@media (width > 600px) {
-  .menu {
-    /* all: unset; */
-    display: flex;
-    gap: var(--space-1);
-    padding: 0;
-    border: none;
-    background: none;
-    position: static;
-  }
 }
 
 /* footer - spacing mellem sidste section og footeren */
@@ -293,19 +289,19 @@ men jeg vil gerne tydeligt kunne se mine egne ændringer*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* hero section */
-.hero {
-  background-color: rgb(232, 238, 243);
-  h1 {
-    margin-left: 70px;
+.text_on_top {
+  text-align: center;
+  color: blue;
+
+  .text {
+    position: absolute;
+    top: 120px;
+    right: 5%;
   }
-  button {
-    margin-top: 30px;
-    margin-left: 70px;
-    padding: 5px;
-    border-radius: 35%;
-    &:hover {
-      cursor: pointer;
-    }
+  .img {
+    width: 100%;
+    display: block;
+    filter: brightness(115%);
   }
 }
 
@@ -316,64 +312,37 @@ men jeg vil gerne tydeligt kunne se mine egne ændringer*/
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* .forside-beskrivelse {
-  ..
-} */
+.forside-beskrivelse {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* section med billeder af dyr/planter på forsiden */
-.intro-billeder {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: #ffffff;
-}
-
-.vand {
-  p {
-    justify-self: center;
-    padding-top: 5px;
-  }
+.dyre-kategorier {
+  background-color: #75ab7a;
+  color: #fff;
   img {
-    justify-self: center;
-    max-width: 250px;
+    max-width: 100%;
     max-height: auto;
   }
 }
-
-.land {
-  p {
-    justify-self: center;
-    padding-top: 5px;
-  }
-  img {
-    justify-self: center;
-    max-width: 250px;
-    max-height: auto;
-  }
-}
-
-.luft {
-  p {
-    justify-self: center;
-    padding-top: 5px;
-  }
-  img {
-    justify-self: center;
-    max-width: 250px;
-    max-height: auto;
-  }
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* section med program og kort*/
 .program {
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   img {
     max-width: 500px;
     max-height: auto;
+  }
+  dd {
+    display: block;
+    margin-left: 2em;
   }
 }
 
@@ -389,5 +358,42 @@ men jeg vil gerne tydeligt kunne se mine egne ændringer*/
     border: 1px solid black;
     padding: 5px;
     border-radius: 30%;
+  }
+}
+
+@media (width > 600px) {
+  .menu {
+    display: flex;
+    gap: var(--space-1);
+    padding: 0;
+    border: none;
+    background: none;
+    position: static;
+  }
+  .text_on_top {
+    color: #000;
+  }
+  /* section med billeder af dyr/planter på forsiden */
+  .dyre-kategorier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+      justify-self: center;
+      max-width: 250px;
+      max-height: auto;
+    }
+    p {
+      justify-self: center;
+      padding-top: 5px;
+    }
+  }
+  .program {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+      max-width: 500px;
+      max-height: auto;
+    }
   }
 }
