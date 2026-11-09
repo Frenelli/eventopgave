@@ -284,9 +284,19 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
   margin-top: 50px;
 }
 
-/* alt herunder indtil næste _________ er specifikt forsiden (uden header og footer) */
+/* footer */
+.footer-content {
+  p:first-child {
+    margin-top: 30px;
+  }
+  .kontakt {
+    margin-top: -30px;
+  }
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* alt herunder indtil næste _________ er specifikt forsiden (uden header og footer) */
 
 /* hero section */
 .text_on_top {
@@ -298,6 +308,15 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
     top: 120px;
     right: 5%;
   }
+
+  .cta {
+    margin: 60px;
+    padding: 5px 5px;
+    background-color: #75ab7a;
+    background-size: 5px;
+    border-radius: 25%;
+  }
+
   .img {
     width: 100%;
     display: block;
@@ -361,6 +380,10 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
   }
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* _____________________________________ */
+
 @media (width > 600px) {
   .menu {
     display: flex;
@@ -394,6 +417,14 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
     img {
       max-width: 500px;
       max-height: auto;
+    }
+  }
+  .footer-content {
+    p:first-child {
+      margin-top: 30px;
+    }
+    .kontakt {
+      margin-top: -30px;
     }
   }
 }
