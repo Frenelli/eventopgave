@@ -1,0 +1,24 @@
+.form-placeholder {
+  padding: 20px;
+}
+
+@media (width > 600px) {
+  .form-placeholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .main-nav button {
+    display: none;
+  }
+  .menu-list {
+    all: unset;
+    display: flex;
+    gap: 2ch;
+    list-style: none;
+  }
+  .menu-item {
+    padding: 0;
+  }
+}
