@@ -1,45 +1,115 @@
 <!doctype html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formular | Eventnavn</title>
-    <link rel="stylesheet" href="./css/starter.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="header-content">
-        <a class="site-logo" href="./">Eventnavn</a>
-        <nav class="site-nav">
-          <button popovertarget="menu">Menu</button>
-          <ul class="menu" id="menu" popover>
-            <li><a href="./">Forside</a></li>
-            <li><a href="./svg.html">Aktivitetskort</a></li>
-            <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formular | NATURAMA</title>
+  <link rel="stylesheet" href="./css/starter.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/form.css">
+</head>
 
-    <main>
-      <section class="form-page">
-        <header class="form-intro">
-          <h1>Formular</h1>
-          <p>Lav en formular, der sender brugeren videre til opsamlingssiden.</p>
-        </header>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./">NATURAMA | Mosemissionen</a>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html">Aktivitetskort</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <form class="form-placeholder" action="./opsamling.html"></form>
-      </section>
-    </main>
+  <main>
+    <section class="form-page">
+      <header class="form-intro">
+        <h1>Formular til Mosemission</h1>
+        <p>Tilmeld dig og vær med på en spændende rejse rundt i Mosesamfundet, hvor du bliver klogere på hvilken
+          udfording, der kommer krybende i det skjulte. <br> <br> Vælg et af fire Mosesamfund og vær med til at hjælpe
+          der
+          hvor
+          der
+          er brug for hjælp.</p>
+      </header>
 
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>Eventnavn</p>
-        <p>Footer</p>
-      </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+      <form class="form-placeholder" action="./opsamling.html">
+        <div>
+          <label for="field-firstLastName">For- og efternavn</label>
+          <input type="text" id="field-firstLastName" name="firstLastName">
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocapitalize="none" spellcheck="false" reguired>
+
+          <label for="field-phone">Telefon</label>
+          <input type="tel" id="field-phone" name="phone">
+
+          <label for="field-date">Fødselsdag</label>
+          <input type="date" id="field-date" name="date">
+
+          <fieldset>
+            <legend>Hvilken Mosemission vil du opleve?</legend>
+            <label for="field-mosemission-1">
+              <input type="radio" id="field-mosemission-1" name="mosemission" value="utterslev" checked>
+              Utterslev mose
+            </label>
+            <label for="field-mosemission-2">
+              <input type="radio" id="field-mosemission-2" name="mosemission" value="sengeløse">
+              Sengeløse mose
+            </label>
+            <label for="field-mosemission-3">
+              <input type="radio" id="field-mosemission-3" name="mosemission" value="porsemose">
+              Porsemose
+            </label>
+            <label for="field-mosemission-4">
+              <input type="radio" id="field-mosemission-4" name="mosemission" value="tysmosen">
+              Tysmosen
+            </label>
+          </fieldset>
+        </div>
+
+        <div>
+          <fieldset>
+            <legend>Hvilken dato passer bedst?</legend>
+            <label for="field-reason-1">
+              <input type="radio" id="field-reason-1" name="reason" value="januar">
+              15 januar
+            </label>
+            <label for="field-reason-2">
+              <input type="radio" id="field-reason-2" name="reason" value="marts">
+              24 marts
+            </label>
+            <label for="field-reason-3">
+              <input type="radio" id="field-reason-3" name="reason" value="april">
+              2 april
+            </label>
+          </fieldset>
+
+          <label for="field-message">Noget vi skal vide?</label>
+          <textarea id="field-message" name="message" rows="4"></textarea>
+          <label>
+            <input type="checkbox" name="accept-terms" required>
+            Jeg acceptere betingelserne </label>
+          <p class="status" data-status aria-live="polite"></p>
+          <button type="submit">Tilmeld</button>
+        </div>
+      </form>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Eventnavn</p>
+      <p>Footer</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
