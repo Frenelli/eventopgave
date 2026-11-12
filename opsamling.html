@@ -1,48 +1,80 @@
 <!doctype html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Opsamling | Eventnavn</title>
-    <link rel="stylesheet" href="./css/starter.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <header class="site-header">
-      <div class="header-content">
-        <a class="site-logo" href="./">Eventnavn</a>
-        <nav class="site-nav">
-          <button popovertarget="menu">Menu</button>
-          <ul class="menu" id="menu" popover>
-            <li><a href="./">Forside</a></li>
-            <li><a href="./svg.html">Aktivitetskort</a></li>
-            <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opsamling | NATURAMA</title>
+  <link rel="stylesheet" href="./css/starter.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/opsamling.css">
+</head>
 
-    <main>
-      <section class="opsamling-page">
-        <div class="opsamling-intro">
-          <h1>Opsamling</h1>
-          <p>Vis brugerens valg som et pass, en invitation eller noget andet, der passer til dit event.</p>
-          <div class="actions">
-            <a class="button" href="./form.html">Tilbage til formular</a>
-          </div>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./">NATURAMA | Mosemissionen</a>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html">Aktivitetskort</a></li>
+          <li><a href="./form.html" aria-current="page">Tilmelding</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="opsamling-page">
+      <div class="opsamling-intro">
+        <h1>Opsamling</h1>
+        <p>Vis brugerens valg som et pass, en invitation eller noget andet, der passer til dit event.</p>
+        <div class="actions">
+          <a class="button" href="./form.html">Tilbage til formular</a>
         </div>
-
-        <article class="opsamling-placeholder"></article>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>Eventnavn</p>
-        <p>Footer</p>
       </div>
-    </footer>
-    <script src="./script.js"></script>
-  </body>
+
+      <article class="opsamling-placeholder"></article>
+    </section>
+
+    <article class="card">
+      <div class="card-content flow">
+        <h3>Tillykke! Du er vores seneste Mosekæmper!</h3>
+        <p>
+          Vi i NATURAMA er stolt over dit Mosemod og har i flere år set frem til din deltagelse. </p>
+        </p>
+        <button class="btn" popovertarget="program-details">
+          Modtag din Mosemission her!
+        </button>
+      </div>
+      </div>
+    </article>
+
+    <div class="program-details" id="program-details" popover>
+      <img src="/images/blomst.webp" alt="Deltagere omkring et bord med noter og laptops">
+      <div class="program-content flow">
+        <h2>Kære Mosekæmper,</h2>
+        <p>
+          Vi har håbet og bedt om godt vejr, så mosen atter igen kan
+          blive fyldt med liv. Noget er slået fejl, da planter og dyr ikke længere er hvor de plejer at være. Du er
+          vores eneste håb for en lys og grøn fremtid! Sammel så
+          mange artifakter som muligt inden tiden løber ud. <br><br> NATURAMA og Mosefolket sætter sin lid til dig! Held
+          og
+          lykke og må Moseoddsene altid være med dig! </p>
+        <button class="btn" popovertarget="program-details">
+          Luk
+        </button>
+      </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Eventnavn</p>
+      <p>Footer</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
 </html>
