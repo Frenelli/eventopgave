@@ -1,0 +1,93 @@
+/* _____________________________________________ */
+
+/* alt herunder indtil næste _________ er specifikt SVG (uden header og footer) */
+
+.accordion-item {
+  border: 1px solid #a5a4a4;
+}
+
+summary::marker {
+  content: none;
+}
+
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e2e2e2;
+  border: 1px solid #a5a4a4;
+}
+
+summary::after {
+  content: "+";
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+:open summary::after {
+  content: "-";
+}
+
+/*transition*/
+html {
+  interpolate-size: allow-keywords;
+}
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.3s;
+  transition-behavior: allow-descrete;
+}
+:open::details-content {
+  height: auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*form*/
+label {
+  display: block;
+  font-weight: 600;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1rem, 16px);
+}
+
+.hint {
+  margin: 0;
+}
+
+.status {
+  margin: 0;
+  &:empty {
+    display: none;
+  }
+}
+
+form {
+  display: grid;
+  gap: 1rth;
+  max-width: 28rem;
+  padding: 1rth;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px #0000000d;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.35rth;
+}
+
+.terms {
+  display: flex;
+  gap: 0.5rth;
+  align-items: start;
+}
