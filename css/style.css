@@ -202,7 +202,7 @@ main > * {
 .panel,
 .svg-placeholder,
 .form-placeholder,
-.opsamling-placeholder {
+.event-pass {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
 }
@@ -214,7 +214,7 @@ main > * {
 }
 
 .svg-placeholder,
-.opsamling-placeholder {
+.event-pass {
   min-height: -webkit-fill-available;
   min-height: stretch;
 }
