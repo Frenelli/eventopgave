@@ -291,32 +291,55 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
 /* hero section */
 .text_on_top {
   text-align: center;
-  color: blue;
-
+  color: #75ab7a;
   .text {
     position: absolute;
     top: 120px;
     right: 5%;
   }
-  .img {
+  .moseImg {
     width: 100%;
+    height: auto;
     display: block;
     filter: brightness(115%);
   }
 }
 
-/* .tilmeldingsblanket {
-  ...
-} */
-/* ^^ popover */
+.forside-beskrivelse {
+  h2,
+  p {
+    margin-bottom: 16px;
+  }
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.forside-beskrivelse {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+/* tilmeldingsblanket*/
+.form-placeholder {
+  padding: 20px;
 }
+
+@media (width > 600px) {
+  .form-placeholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .main-nav button {
+    display: none;
+  }
+  .menu-list {
+    all: unset;
+    display: flex;
+    gap: 2ch;
+    list-style: none;
+  }
+  .menu-item {
+    padding: 0;
+  }
+}
+
+/* ^^ popover */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -324,9 +347,9 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
 .dyre-kategorier {
   background-color: #75ab7a;
   color: #fff;
-  img {
-    max-width: 100%;
-    max-height: auto;
+  .dyreliv-i-vand {
+    width: 100%;
+    height: auto;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -334,32 +357,69 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
 /* section med program og kort*/
 .program {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   img {
     max-width: 500px;
     max-height: auto;
   }
   dd {
     display: block;
-    margin-left: 2em;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (width > 600px) {
+  .program {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*Popover*/
+[popover] {
+  background: whitesmoke;
+  border: 1px solid gainsboro;
+  padding: 1rem;
+  transition-duration: 0.3s;
+  transition-property: display, overlay, opacity, scale;
+  transition-behavior: allow-discrete;
+  opacity: 0;
+  scale: 0.95;
+  img {
+    width: 50%;
+  }
+  @media (width >600px) {
+    opacity: 1;
+  }
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  scale: 1;
+}
+
+[popover]::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.3s;
+  transition-behavior: allow-discrete;
+}
+
+[popover]:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+    scale: 0.95;
+  }
+  [popover]:popover-open::backdrop {
+    opacity: 0;
   }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* section med sponsorer, lokalforeninger osv. */
-.sponsorer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: #a2a2a2;
-  p {
-    justify-self: center;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 30%;
-  }
-}
 
 @media (width > 600px) {
   .menu {
@@ -387,13 +447,10 @@ men vi vil gerne tydeligt kunne se vores ændringer*/
       padding-top: 5px;
     }
   }
-  .program {
-    list-style: none;
+
+  .brødtext {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    img {
-      max-width: 500px;
-      max-height: auto;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
   }
 }
