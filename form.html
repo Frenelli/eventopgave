@@ -42,11 +42,12 @@
           <fieldset>
             <legend><strong>Kontaktoplysninger</strong></legend>
             <label for="fulde-navn">Fulde navn *</label>
-            <input type="text" id="fulde-navn" name="fulde-navn" placeholder="Anders Jensen" required>
+            <input type="text" id="fulde-navn" name="fulde-navn" style="text-transform: capitalize;"
+              placeholder="Anders Jensen" required>
 
             <label for="email">E-mail *</label>
             <input id="email" name="email" type="email" autocapitalize="none" spellcheck="false"
-              placeholder="anders.jensen@gmail.com" required>
+              style="text-transform: lowercase;" placeholder="anders.jensen@gmail.com" required>
 
             <label for="phone">Telefon</label>
             <input type="tel" id="phone" name="phone" maxlength="8" pattern="[0-9]{8}" placeholder="12 34 56 78">
@@ -78,19 +79,19 @@
           <fieldset>
             <legend><strong>Hvilken Mosemission vil du opleve? *</strong></legend>
             <label for="mosemission-1">
-              <input type="radio" id="mosemission-1" name="mosemission" value="utterslev">
+              <input type="radio" id="mosemission-1" name="mosemission" value="Utterslev mose">
               Utterslev mose
             </label>
             <label for="mosemission-2">
-              <input type="radio" id="mosemission-2" name="mosemission" value="sengeløse">
+              <input type="radio" id="mosemission-2" name="mosemission" value="Sengeløse">
               Sengeløse mose
             </label>
             <label for="mosemission-3">
-              <input type="radio" id="mosemission-3" name="mosemission" value="porsemose">
+              <input type="radio" id="mosemission-3" name="mosemission" value="Porsemose">
               Porsemose
             </label>
             <label for="mosemission-4">
-              <input type="radio" id="mosemission-4" name="mosemission" value="tysmosen">
+              <input type="radio" id="mosemission-4" name="mosemission" value="Tysmosen">
               Tysmosen
             </label>
           </fieldset>
@@ -99,16 +100,16 @@
         <div>
           <fieldset>
             <legend><strong>Hvilken dato passer bedst? *</strong></legend>
-            <label for="reason-1">
-              <input type="radio" id="reason-1" name="reason" value="januar">
+            <label for="dato-1">
+              <input type="radio" id="dato-1" name="dato" value="15. Januar">
               15. januar
             </label>
             <label for="reason-2">
-              <input type="radio" id="reason-2" name="reason" value="marts">
+              <input type="radio" id="dato-2" name="dato" value="24. Marts">
               24. marts
             </label>
             <label for="reason-3">
-              <input type="radio" id="reason-3" name="reason" value="april">
+              <input type="radio" id="dato-3" name="dato" value="2. April">
               2. april
             </label>
           </fieldset>
