@@ -1,0 +1,68 @@
+@media (width > 600px) {
+  .menu {
+    display: flex;
+    gap: var(--space-1);
+    padding: 0;
+    border: none;
+    background: none;
+    position: static;
+  }
+
+  .footer-brand {
+    margin-top: 35px;
+  }
+  .footer-logo {
+    margin-top: 35px;
+  }
+
+  .text_on_top {
+    color: #000;
+  }
+
+  .knapper {
+    div {
+      display: flex;
+      justify-content: space-between;
+      gap: 115px;
+      margin-bottom: 15px;
+      p {
+        padding: 6px 8px;
+      }
+    }
+  }
+
+  /* section med billeder af dyr/planter på forsiden */
+  .dyre-kategorier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+      justify-self: center;
+      max-width: 250px;
+      max-height: auto;
+    }
+    p {
+      justify-self: center;
+      padding-top: 5px;
+    }
+  }
+
+  .program {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    img {
+      max-width: 500px;
+      max-height: auto;
+    }
+  }
+
+  .karrusel {
+    .sponsorer {
+      --antal: 5;
+      img {
+        flex: 0 0 calc(100% / var(--antal));
+        width: calc(100% / var(--antal));
+      }
+    }
+  }
+}

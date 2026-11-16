@@ -7,12 +7,13 @@
   <title>NATURAMA | Mosemissionen</title>
   <link rel="stylesheet" href="./css/starter.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
-      <a class="site-logo" href="./">NATURAMA</a>
+      <a class="site-logo" href="./">NATURAMA | Mosemissionen</a>
       <nav class="site-nav">
         <button popovertarget="menu">Menu</button>
         <!-- har tilføjet popovertarget="menu", for at linke knappen til menuen og lave det til en popovermenu (dropdown) -->
@@ -29,22 +30,33 @@
     <div class="text_on_top">
       <img src="images/mose.webp" alt="main picture">
       <div class="text">
-        <h1>Naturjagt i Utterslev mose</h1>
+        <h1>Gå på opdagelse i moselivet</h1>
+        <!-- <button class="cta-knap">Tilmeld jer her</button> -->
+        <p class="cta">Tilmeld jer her</p>
       </div>
     </div>
 
     <div class="forside-beskrivelse">
-      <h2>Udforsk mosen</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore facere qui dolore,
-        corrupti nemo ratione voluptates rerum nesciunt nam ipsum assumenda sint voluptatibus at sit expedita aliquid
-        quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore facere qui dolore,
-        corrupti nemo ratione voluptates rerum nesciunt nam ipsum assumenda sint voluptatibus at sit expedita aliquid
-        quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore facere qui dolore,
-        corrupti nemo ratione voluptates rerum nesciunt nam ipsum assumenda sint voluptatibus at sit expedita aliquid
-        quod!</p>
+      <h2>Hvad går Mosemissionen ud på?</h2>
+      <!-- meget kort beskrivelse af eventet -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore
+        facere qui dolore, corrupti nemo ratione voluptates rerum nesciunt nam ipsum assumenda
+        sint voluptatibus at sit expedita aliquid quod! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit.
+      </p>
     </div>
 
-    <p>Cta: SVG, Tilmelding</p>
+    <section class="knapper">
+      <div>
+        <a class="svg-knap" href="svg.html">
+          <p>Aktivitetskort</p>
+        </a>
+        <a class="form-knap" href="form.html">
+          <p>Tilmelding</p>
+        </a>
+      </div>
+    </section>
 
     <section class="dyre-kategorier">
       <div class="dyreliv-i-vand">
@@ -63,6 +75,7 @@
 
     <div class="forside-beskrivelse">
       <h2>Hvorfor tage på opdagelse i Utterslev mose?</h2>
+      <!-- mere detaljeret beskrivelse af eventet og dem der står bag -->
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore facere qui dolore,
         corrupti nemo ratione voluptates rerum nesciunt nam ipsum assumenda sint voluptatibus at sit expedita aliquid
         quod! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores temporibus tempore facere qui dolore,
@@ -101,27 +114,33 @@
       <img src="images/forside-kort.jpg" alt="">
     </section>
 
-    <section class="sponsorer">
-      <p>navn/logo</p>
-      <p>navn/logo</p>
-      <p>navn/logo</p>
-      <p>navn/logo</p>
+    <section class="karrusel" id="karrusel">
+      <div class="sponsorer" id="sponsorer">
+        <img src="images/bispebjerg-spejderne.webp" alt="sponsor 1">
+        <img src="images/dn.webp" alt="sponsor 2">
+        <img src="images/utterslev-moses-venner.webp" alt="sponsor 3">
+        <img src="images/naturstyrelsen.webp" alt="sponsor 4">
+        <img src="images/WWF_logo.svg.webp" alt="sponsor 5">
+        <img src="images/cafe-staalvand.webp" alt="sponsor 6">
+        <img src="images/triers-kaffevogn.webp" alt="sponsor 7">
+      </div>
     </section>
   </main>
 
 
   <footer class="site-footer">
     <div class="footer-content">
-      <p>NATURAMA</p>
-      <p>**vores logo**</p>
+      <p class="footer-brand">NATURAMA</p>
+      <p class="footer-logo">**vores logo**</p>
       <div>
         <p><strong>Kontakt</strong></p>
-        <p>Lorem ...</p>
-        <p>Lorem ...</p>
-        <p>Lorem ...</p>
+        <p>E-mail: naturama@gmail.com</p>
+        <p>Telefon: +45 12 34 56 78</p>
+        <p>Adresse: Mosesvinget, 2400 København NV</p>
       </div>
     </div>
   </footer>
+  
   <script src="./script.js"></script>
 </body>
 

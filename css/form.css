@@ -1,0 +1,8 @@
+.price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-placeholder button {
+  justify-content: center;
+}
