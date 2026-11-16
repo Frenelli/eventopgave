@@ -13,11 +13,17 @@ if (eventPass) {
 
   const firstChar = fuldeNavn.charAt(0);
 
-  if (firstChar <= "G") {
-    eventPass.style.backgroundColor = "#cf0303";
-  } else if (firstChar > "G") {
-    eventPass.style.backgroundColor = "#0783ff";
+  //det første bogstav i fornavnet definere farven på baggrund i opsamling
+  if (firstChar <= "O") {
+    eventPass.style.backgroundColor = "#7FB8D3";
+  } else if (firstChar > "O") {
+    eventPass.style.backgroundColor = "#99D1AA";
   }
+
+  //Note til videreudvikling:
+  // Hvis der er 1 eller flere børn (uden voksen), så skal der være et billede med et barn.
+  // Hvis der kun er 1 eller flere voksne skal der være et billede med en voksen.
+  // Hvis der er både børn og voksne skal der være et billede med begge.
 
   const emailInput = document.querySelector("#op-email");
   const email = params.get("email");
@@ -35,13 +41,11 @@ if (eventPass) {
   const antalBørn = params.get("antal-børn");
   antalBørnSelect.textContent = antalBørn;
 
-  //det første bogstav i fornavnet definere farven på baggrund i opsamling
-  /*const tekst = document.getElementById("fulde-navn").value;
-  const firstChar = tekst.charAt(0);
+  const valgtMosemission = document.querySelector("#op-mosemission");
+  const mosemission = params.get("mosemission");
+  valgtMosemission.textContent = mosemission;
 
-  if (firstChar <= "g") {
-    document.body.style.backgroundColor = "#cf0303";
-  } else if (firstChar > "g") {
-    document.body.style.backgroundColor = "#0783ff";
-  }*/
+  const valgtDato = document.querySelector("#op-dato");
+  const dato = params.get("dato");
+  valgtDato.textContent = dato;
 }
